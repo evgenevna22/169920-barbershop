@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Татьяна Бренёва](https://up.htmlacademy.ru/htmlcss/13/user/169920).
+Наставник: [Алексей Белов](https://up.htmlacademy.ru/htmlcss/13/user/96038).
 
 ---
 
