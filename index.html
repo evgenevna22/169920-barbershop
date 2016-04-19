@@ -26,6 +26,20 @@
       <div class="index-logo">
         <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
+      <!-- Скрытая форма входа в личный кабинет -->
+      <div class="hidden-login">
+        <form>
+          <fieldset class="login-form">
+            <legend>Личный кабинет</legend>
+            <p>Введите, пожалуйста, свой логин и пароль</p>
+            <input type="text" name="login" id="login" placeholder="Логин">
+            <input type="text" name="password" id="password" placeholder="Пароль">
+            <input type="checkbox" name="remember_me" id="remember_me" checked>
+            <a href="#" class="restore">Я забыл пароль</a>
+            <input type="button" name="comein" value="Войти">
+          </fieldset>
+        </form>
+      </div>
       <section class="features">
         <div class="features-item">
           <b class="features-name">Быстро</b>
@@ -93,9 +107,13 @@
             <button class="btn" type="submit">Отправить</button>
           </form>
         </div>
+        <div class="map">
+          <img src="http://placehold.it/150x100" alt="Здесь картинка" width="" height=""/>
+          <!-- Здесь должна быть картинка карты -->
+        </div>
       </div>
     </main>
-    
+
     <footer class="main-footer">
       <div class="container">
         <section class="footer-contacts">

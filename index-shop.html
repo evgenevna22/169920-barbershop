@@ -27,6 +27,20 @@
     </header>
     <!-- Вся страница каталога -->
     <main class="container">
+      <!-- Скрытая форма входа в личный кабинет -->
+      <div class="hidden-login">
+        <form>
+          <fieldset class="login-form">
+            <legend>Личный кабинет</legend>
+            <p>Введите, пожалуйста, свой логин и пароль</p>
+            <input type="text" name="login" id="login" placeholder="Логин">
+            <input type="text" name="password" id="password" placeholder="Пароль">
+            <input type="checkbox" name="remember_me" id="remember_me" checked>
+            <a href="#" class="restore">Я забыл пароль</a>
+            <input type="button" name="comein" value="Войти">
+          </fieldset>
+        </form>
+      </div>
       <!-- Вторая навигация -->
       <div class="page-nav">
         <nav class="breadcrumbs">
