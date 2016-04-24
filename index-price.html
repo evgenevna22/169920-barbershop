@@ -4,15 +4,18 @@
     <meta charset="utf-8">
     <title>Барбершоп-каталог</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
-        <a href="#home">
-          <img src="img/logo-nav.png" width="111" height="24" alt="Барбершоп «Бородинский»">
-        </a>
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
+            <li>
+              <a href="#home">
+                <img src="img/logo-nav.png" width="111" height="24" alt="Барбершоп «Бородинский»">
+              </a>
+            </li>
             <li><a href="#" class="white">Информация</a></li>
             <li><a href="#" class="white">Новости</a></li>
             <li><a href="#" class="white">Прайс-лист</a></li>
@@ -27,82 +30,96 @@
       </div>
     </header>
     <!-- Вся страница прайс-листа -->
-    <main class="container">
+    <main class="main-main">
+      <div class="container clearfix">
       <!-- Скрытая форма входа в личный кабинет -->
-      <div class="hidden-login">
-        <form>
-          <fieldset class="login-form">
-            <legend class="title-1">Личный кабинет</legend>
-            <p>Введите, пожалуйста, свой логин и пароль</p>
-            <input type="text" name="login" id="login" placeholder="Логин">
-            <img src="img/icon-user.png" width="15" height="15" />
-            <input type="text" name="password" id="password" placeholder="Пароль">
-            <img src="img/icon-lock.png" width="15" height="17" />
-            <input type="checkbox" name="remember_me" id="remember_me" checked>
-            <a href="#" class="restore">Я забыл пароль</a>
-            <input type="button" name="comein" value="Войти">
-          </fieldset>
-        </form>
-      </div>
-      <!-- Вторая навигация -->
-      <div class="page-nav">
-        <nav class="breadcrumbs">
-          <h1 class="title-1">Прайс-лист</h1>
-            <ul>
-              <li><a href="#">Главная</a></li>
+        <div class="hidden-login">
+          <form>
+            <fieldset class="login-form">
+              <legend class="title-1">Личный кабинет</legend>
+              <p>Введите, пожалуйста, свой логин и пароль</p>
+              <input type="text" name="login" id="login" placeholder="Логин">
+              <img src="img/icon-user.png" width="15" height="15" />
+              <input type="text" name="password" id="password" placeholder="Пароль">
+              <img src="img/icon-lock.png" width="15" height="17" />
+              <input type="checkbox" name="remember_me" id="remember_me" checked>
+              <a href="#" class="restore">Я забыл пароль</a>
+              <input type="button" name="comein" value="Войти">
+            </fieldset>
+          </form>
+        </div>
+        <!-- Вторая навигация -->
+        <section class="main-nav">
+          <div class="page-nav">
+            <nav class="breadcrumbs">
+              <h1 class="title-1">Прайс-лист</h1>
+                <ul>
+                  <li><a href="#">Главная</a></li>
 
-              <li><a href="#" class="gray">Прайс-лист</a></li>
+                  <li class="gray">Прайс-лист</li>
+                </ul>
+            </nav>
+          </div>
+        </section>
+        <!-- Карточка прайс-листа -->
+        <section class="title">
+          Истинно мужская классика
+        </section>
+        <section class="left-column">
+          <div class="product">
+            <h2 class="title-2">Мы используем только лучшие средства:</h2>
+            <ul>
+              <li>Baxter of California</li>
+              <li>Mr Natty</li>
+              <li>Suavecito</li>
+              <li>Malin+Goetz</li>
             </ul>
-        </nav>
-      </div>
-      <!-- Карточка прайс-листа -->
-      <div class="title">
-        Истинно мужская классика
-      </div>
-      <div class="product">
-        <h2 class="title-2">Мы используем только лучшие средства:</h2>
-        <ul>
-          <li>Baxter of California</li>
-          <li>Mr Natty</li>
-          <li>Suavecito</li>
-          <li>Malin+Goetz</li>
-        </ul>
-      </div>
-      <div class="table-price">
-        <table>
-          <caption class="title-2">Цены на услуги
-            наших мастеров:</caption>
-          <tr>
-            <td>Стрижка</td><td>1500 Р.</td>
-          </tr>
-          <tr>
-            <td>Стрижка бороды</td><td>500 Р.</td>
-          </tr>
-          <tr>
-            <td>Накрутка усов</td><td>350 Р.</td>
-          </tr>
-        </table>
-      </div>
-      <!-- Два блока описания Barbershop'а -->
-      <div class="about-us">
-        <h2 class="title-2">Несколько слов о нас:</h2>
-          <p class="about-left">
-            Наша парикмахерская занимается исключительно мужскими
-            стрижками. Стрижка каждого клиента для нас - это уникальная
-            и продуманная до мелочей работа. Мы не работаем на количество,
-            мы делаем качество.
-          </p>
-          <p class="about-right">
-            Наша мастерская расположена в центре города, поэтому
-            сделать стильную стрижку можно в любое время, даже в
-            обеденный перерыв. Здесь вы можете погрузиться в удобную
-            для Вас атмосферу, чувствовать себя комфотно и свободно!
-          </p>
+          </div>
+        </section>
+        <section class="right-column">
+          <div class="table-price">
+            <h2 class="title-2">Цены на услуги
+                наших мастеров:</h2>
+            <table class="prices">
+              <tr>
+                <th>Стрижка</th><td>1500 Р.</td>
+              </tr>
+              <tr>
+                <th>Стрижка бороды</th><td>500 Р.</td>
+              </tr>
+              <tr>
+                <th>Накрутка усов</th><td>350 Р.</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <!-- Два блока описания Barbershop'а -->
+        <section>
+          <h2 class="title-2">Несколько слов о нас:</h2>
+          <div class="about-us">
+            <div class="about-left">
+              <p>
+                Наша парикмахерская занимается исключительно мужскими
+                стрижками. Стрижка каждого клиента для нас - это уникальная
+                и продуманная до мелочей работа. Мы не работаем на количество,
+                мы делаем качество.
+              </p>
+            </div>
+            <div class="about-right">
+              <p>
+                Наша мастерская расположена в центре города, поэтому
+                сделать стильную стрижку можно в любое время, даже в
+                обеденный перерыв. Здесь вы можете погрузиться в удобную
+                для Вас атмосферу, чувствовать себя комфотно и свободно!
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 
     <footer class="main-footer">
-        <div class="container">
+        <div class="container clearfix">
           <section class="footer-contacts">
             <p class="white">Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
